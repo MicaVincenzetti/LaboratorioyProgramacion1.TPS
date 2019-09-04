@@ -40,19 +40,19 @@ do
         {
             case '1' :
                 r = suma(x,y);
-                printf("\n -El resultado de %d + %d = %.2f \n", x,y,r);
+                printf("\n -El resultado de %d mas %d = %.2f \n", x,y,r);
                 break;
 
             case '2' :
                 r = resta(x,y);
-                printf("\n -El resultado de %d - %d = %.2f \n", x,y,r);
+                printf("\n -El resultado de %d menos %d = %.2f \n", x,y,r);
                 break;
 
             case '3' :
                 if(y != 0)
                 {
                     r = division(x,y);
-                    printf("\n -El resultado de %d / %d = %.2f \n", x,y,r);
+                    printf("\n -El resultado de %d dividido %d = %.2f \n", x,y,r);
                 }else
                 {
                     printf("\n ¡No se puede dividir por 0! \n");
@@ -61,7 +61,7 @@ do
 
             case '4' :
                 r = multiplicar(x, y);
-                printf("\n -El resultado de %d * %d = %.2f \n", x, y, r);
+                printf("\n -El resultado de %d multiplicado por  %d = %.2f \n", x, y, r);
                 break;
 
             case '5' :
