@@ -9,8 +9,16 @@ int main()
     char opcion;
     float r;
 
+
+
 do
 {
+        printf("\n **INGRESE VALORES** \n");
+        printf("\n *Ingrese el primer numero: ");
+        scanf("%d", &x);
+        printf("\n *Ingrese el segundo numero: ");
+        scanf("%d", &y);
+
         printf("\n **MENU CALCULADORA** \n");
         printf("1) Calcular la suma (A+B)\n");
         printf("2) Calcular la resta (A-B)\n");
@@ -20,21 +28,6 @@ do
         printf("6) SALIR \n");
         fflush(stdin);
         scanf("%c", &opcion);
-
-        do
-        {
-            printf( "\n   Introduzca opcion (1-6): " );
-            fflush( stdin );
-            scanf( "%c", &opcion);
-
-        } while ( opcion < '1' || opcion > '6' );
-
-
-        printf("\n *Ingrese el primer numero: ");
-        scanf("%d", &x);
-        printf("\n *Ingrese el segundo numero: ");
-        scanf("%d", &y);
-
 
         switch(opcion)
         {
@@ -94,6 +87,12 @@ do
                         printf("\n -El factorial de %d es: %.2f \n", y, r);
                     }
                 break;
+            case '6':
+                printf("\n Usted esta saliendo de la calculadora \n");
+                break;
+
+            default :
+                printf("\n Usted no ingreso una opcion valida \n");
 
         }
 
