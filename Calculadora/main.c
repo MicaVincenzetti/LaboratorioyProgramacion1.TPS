@@ -1,8 +1,6 @@
 #include <stdlib.h>
 #include "calculadora.h"
 
-// LLamo a la biblioteca que contiene las funciones a utilizar en el main
-
 int main()
 {
 
@@ -57,7 +55,7 @@ do
                     printf("\n -El resultado de %d / %d = %.2f \n", x,y,r);
                 }else
                 {
-                    printf("\n ¡No se puede dividir por 0! \n");
+                    printf("\n Â¡No se puede dividir por 0! \n");
                 }
                 break;
 
